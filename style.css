@@ -1,0 +1,74 @@
+ /* Variables */
+ :root
+ {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+ }
+ /* Global Rules  */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body
+{
+    background-color: var(--Light-gray);
+}
+
+p
+{
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+
+/* Design Components  */
+.card
+{
+    background-color: var(--White);
+    width: 3in;
+    height: 4.7in;
+    padding: .5cm;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 3px 15px -2px var(--Grayish-blue);
+}
+
+.card .img
+{
+    background-image: url(./images/image-qr-code.png);
+    background-size: cover;
+    background-position: top;
+    height: 15em;
+    border-radius: 7px;
+}
+
+.content
+{
+    text-align: center;
+    line-height: 1.5em;
+    padding-top: .6cm;
+}
+
+.content h3
+{
+    padding-bottom: .6cm;
+    font-weight: 700;
+    color: var(--Dark-blue);
+    text-indent: .2em;
+}
+
+.content p
+{
+    color: var(--Grayish-blue);
+
+}
